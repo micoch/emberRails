@@ -1,3 +1,10 @@
 html, body {
-  margin: 20px;
+}
+
+ul li{
+	display: inline;
+}
+
+.navbar, .navbar-default{
+	border: none;
 }
