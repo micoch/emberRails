@@ -1,5 +1,9 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
-export default DS.ActiveModelAdapter.extend({
-  namespace: 'api'
+
+Ember.ApplicationAdapter = DS.ActiveModelAdapter.extend({
+	namespace: 'api'
 });
+
+export default Ember.ApplicationAdapter;

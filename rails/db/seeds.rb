@@ -5,7 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+mike = Speaker.create(name: 'Michael C')
+jim = Speaker.create(name: 'Jimmy C')
+dustin = Speaker.create(name: 'Dustin')
 
-Speaker.create(name: 'Michael C')
-Speaker.create(name: 'Jimmy C')
-Speaker.create(name: 'Dustin F')
+mike.presentations.create(title: 'This is Development')
+mike.presentations.create(title: 'The Process of Reinvention')
+
+jim.presentations.create(title: 'The Saints as Faith Finding Facilitators')
+
+dustin.presentations.create(title: 'Sports Mobile for the Family')
+dustin.presentations.create(title: 'Build with Imaginitive Hands')
+dustin.presentations.create(title: 'Family Trekking')
